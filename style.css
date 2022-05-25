@@ -1,0 +1,494 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+}
+
+/****************************************************************nav bar****************************************************/
+nav {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1em;
+  padding-left: 10px;
+  position: fixed;
+  width: 101%;
+  background: black;
+  height: 30px;
+  z-index: 2;
+}
+
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+}
+
+nav ul li a:hover {
+  color: #5fc7ab;
+}
+
+/**********************************************************************fin nav bar *************************************************/
+/*************************************************** titres *********************************************************************/
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h1 {
+
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-align: center;
+
+  padding: 3%;
+}
+
+h3 {
+  padding: 20px;
+
+}
+
+h4 {
+  padding: 20px;
+
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #05cdfe;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/*soulignemment sous les titres */
+/************************************************************titres fin*********************************************************/
+/************************************************************fouter*************************************************************/
+footer {
+  width: 101%;
+  background: black;
+  height: 30px;
+  color: white;
+  text-align: center;
+}
+
+/************************************************************fouter fin*********************************************************/
+table {
+  text-align: justify;
+}
+
+/************************************************************classes************************************************************/
+.bas {
+  margin-bottom: 70px;
+}
+
+.bouton_emot {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  border-radius: 25px;
+  border: none;
+  background: none;
+  color: #e3890af8;
+  transition: all 0.5s;
+}
+
+.bouton_emot:hover {
+  transform: translateX(20px);
+  animation: rotation 2s linear;
+  color: black;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: rotate(359deg);
+
+    transform: translateX(20px);
+  }
+}
+
+
+.button_Ncolor {
+  background: none;
+  border: solid 1px white;
+  color: white;
+}
+
+.button_colorw {
+  background: white;
+  border: none;
+  color: #05cdfe;
+}
+
+.button_colorB {
+  background: #2E86C1;
+  border: none;
+  color: white;
+
+}
+
+.button_colorChad {
+  box-shadow: 0 9px #999;
+}
+
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background: #05cdfe;
+  color: white;
+}
+
+.button_Ncolor:hover {
+  opacity: 75%;
+}
+
+.button_colorChad:active {
+  background-color: #05cdfe;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.bordur {
+  margin: 30px;
+  height: 30em;
+  width: 40em;
+}
+
+.block {
+  background: white;
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 30px;
+  height: 30em;
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.block_img {
+  width: 80%;
+  border-radius: 10%;
+  margin: auto;
+}
+
+.block_invi {
+
+  height: 15em;
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block_flex {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.rad {
+  border-radius: 10%;
+  margin: 10px;
+}
+
+.rond {
+  border-radius: 50%;
+  width: 40%;
+}
+
+
+
+/************************************************************fin classes********************************************************/
+/************************************************************ ID ***************************************************************/
+/*-----------------------------------------nav */
+#zanzibar {
+  font-family: "warnesregular";
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+/*-----------------------------------------fin nav */
+/*-----------------------------------------block premiere photo */
+#ilot {
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+      rgba(7, 117, 230, 0.3)), url('./images/header.jpg');
+  height: 100vh;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+
+#placement {
+
+  vertical-align: middle;
+  margin: auto;
+  left: 1px;
+  margin-top: 10em;
+  margin-left: 10em;
+  text-align: left;
+}
+
+/*-----------------------------------------fin block premiere photo */
+/*-----------------------------------------block qui somes nous + singe */
+#singe {
+  background: url('./images/tea.png');
+  height: 100%;
+  width: 50vw;
+  background-size: cover;
+  background-position: left;
+  position: absolute;
+  margin-right: 25%;
+  background-repeat: no-repeat;
+}
+
+#tablo {
+  width: 75vh;
+}
+
+#transparent {
+  background: none;
+  z-index: 1;
+  margin-left: 50%;
+}
+
+#pose {
+  background-color: white;
+  border: 1px solid white;
+  margin-bottom: 10em;
+  position: relative;
+}
+
+/*-----------------------------------------fin block qui somes nous + singe */
+/*-----------------------------------------block notre ile (photo+paragaphe) */
+#fontaqua {
+  background: aqua;
+}
+
+/*-----------------------------------------fin block notre ile (photo+paragaphe) */
+/*-----------------------------------------block galerie photo */
+#femmes {
+  background: url('./images/galerie/femmes-zanzibar.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#plages {
+  background: url('./images/galerie/plage-zanzibar.jpg');
+  background-repeat: no-repeat;
+  width: 80vh;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#epices {
+  background: url('./images/galerie/epices-zanzibar.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#village {
+  background: url('./images/galerie/village-pecheur-zanzibar.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#safari {
+  background: url('./images/galerie/safari-blue.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.imggal {
+  height: 40vh;
+  width: 40vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
+  margin: 15px;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------------------------fin block galerie photo */
+/*-----------------------------------------font Parallax Scrolling + avie */
+#fontbouge {
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+      rgba(7, 117, 230, 0.3)), url(./images/the-paysage.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(75%);
+}
+
+#adore {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.blanc {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/*-----------------------------------------fin font Parallax Scrolling + avie */
+/*-----------------------------------------block tarif séjour + nb jour +descritif */
+.bloc_tarif {
+  height: auto;
+  width: 25%;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 25px;
+
+}
+
+.bloc_prix {
+  width: 90%;
+  margin: auto;
+}
+
+.colorB {
+  background: aqua;
+}
+
+/*-----------------------------------------fin block tarif séjour + nb jour +descritif */
+/*-----------------------------------------block carte + nous contacté */
+#ifram {
+  width: 100vh;
+  height: 60vh;
+  border: 0;
+}
+
+#flexcomun {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  ul {
+    flex-direction: column;
+  }
+
+  .imggal {
+
+    width: 70vh !important;
+    background-size: cover;
+    border-radius: 0%;
+    background-position: center;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+  }
+
+  #ilot {
+    height: 80vh;
+
+  }
+
+  #singe {
+    height: 100%;
+    width: 100vw;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    margin-right: 0%;
+    opacity: 0.5;
+  }
+
+  #transparent {
+    background: none;
+    z-index: 1;
+    margin: 0%;
+
+  }
+
+  #placement {
+    margin-top: 200px;
+  }
+
+  #tablo {
+    width: 80vw;
+    margin: 0;
+  }
+
+  nav {
+    font-size: 1.05em;
+    height: auto;
+  }
+
+
+  .colomflex {
+    flex-direction: column;
+  }
+
+  .block_invi {
+    height: auto;
+    width: auto;
+    padding: 5px;
+  }
+
+  .bloc_tarif {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #flexcomun {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {}
